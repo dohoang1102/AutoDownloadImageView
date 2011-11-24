@@ -125,13 +125,10 @@
 	 * questo spesso è sufficiente affinché venga visualizzata
 	 * l'immagine corretta, se così non fosse il delegate dovrà invocare un setNeedDisplay
 	 */	  
-	 if ([UIImage imageWithData:receivedData] == nil){
-        
-	  }
-    else
-    {
+	 if ([UIImage imageWithData:receivedData] != nil)
+	 {
         self.image = [UIImage imageWithData:receivedData];
-    }
+     }
 
 
 	
